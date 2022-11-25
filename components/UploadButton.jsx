@@ -27,3 +27,4 @@ export default function UploadButtons({ file, setFile }) {
         </Stack>
     );
 }
+
