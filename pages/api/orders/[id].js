@@ -33,4 +33,5 @@ export default async function ProxyHandler(req, res) {
             res.status(500).json({ error })
         }
     }
+    
 }
