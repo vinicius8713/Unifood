@@ -25,3 +25,4 @@ export const {productAddedToCart, cartReseted} = carts.actions
 
 
 export default carts.reducer
+
