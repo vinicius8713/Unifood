@@ -60,31 +60,22 @@ export default function AddPizza({ setClose }) {
 
     return (
         <Dialog open={open} onClose={handleClose} >
-            <DialogTitle style={{ fontWeight: "bold", fontSize: "2rem", paddingBottom: "0rem" }}>Add New Pizza</DialogTitle>
+            <DialogTitle style={{ fontWeight: "bold", fontSize: "2rem", paddingBottom: "0rem" }}>Adicionar Food</DialogTitle>
             <form onSubmit={handleSubmit} >
                 <DialogContent style={{ paddingTop: "0.5rem" }}>
                     <DialogContentText style={{ marginBottom: "0.5rem" }}>
-                        Fill the following Details toadd new Pizza
+                    Preencha os seguintes detalhes para adicionar um novo FOOD
                     </DialogContentText>
 
-                    <TextField inputProps={{ minLength: 3 }} required color="bg_color" margin="dense" label="Title" value={title} onChange={(evt) => (setTitle(evt.target.value))} type="text" fullWidth variant="standard" style={{ marginBottom: "0.5rem" }} />
-                    <TextField inputProps={{ minLength: 3 }} required color="bg_color" margin="dense" label="Description" value={desc} onChange={(evt) => (setDesc(evt.target.value))} type="text" fullWidth variant="standard" style={{ marginBottom: "0.5rem" }} />
+                    <TextField inputProps={{ minLength: 3 }} required color="bg_color" margin="dense" label="Título" value={title} onChange={(evt) => (setTitle(evt.target.value))} type="text" fullWidth variant="standard" style={{ marginBottom: "0.5rem" }} />
+                    <TextField inputProps={{ minLength: 3 }} required color="bg_color" margin="dense" label="Descrição" value={desc} onChange={(evt) => (setDesc(evt.target.value))} type="text" fullWidth variant="standard" style={{ marginBottom: "0.5rem" }} />
                     <div style={{ marginBottom: "1rem", marginTop: "0.5rem" }} className={styles.prices}>
-                        <label htmlFor="prices" style={{ display: "inline-block", marginRight: "1rem" }}>Prices</label>
+                        <label htmlFor="prices" style={{ display: "inline-block", marginRight: "1rem" }}>Preços</label>
                         <br />
-                        <TextField className={styles.input} required color="bg_color" margin="dense" label="small" value={prices[0]} onChange={(evt) => (changePrice(evt, 0))} type="number" variant="standard" />
-                        <TextField className={styles.input} required color="bg_color" margin="dense" label="medium" value={prices[1]} onChange={(evt) => (changePrice(evt, 1))} type="number" variant="standard" />
-                        <TextField className={styles.input} required color="bg_color" margin="dense" label="large" value={prices[2]} onChange={(evt) => (changePrice(evt, 2))} type="number" variant="standard" />
+                        <TextField className={styles.input} required color="bg_color" margin="dense" label="" value={prices[0]} onChange={(evt) => (changePrice(evt, 0))} type="number" variant="standard" />
+                        <TextField className={styles.input} required color="bg_color" margin="dense" label="" value={prices[1]} onChange={(evt) => (changePrice(evt, 1))} type="number" variant="standard" />
                     </div>
-                    <div style={{ marginBottom: "0.5rem", marginTop: "0.5rem" }} className={styles.extras}>
-                        <label htmlFor="Extras" style={{ display: "inline-block" }}>
-                            Extras
-                        </label>
-                        <br />
-                        <TextField className={styles.input} name="text" required color="bg_color" margin="dense" label="text" onChange={handleExtraInput} type="text" variant="standard" />
-                        <TextField className={styles.input} name="price" required color="bg_color" margin="dense" label="price" onChange={handleExtraInput} type="number" variant="standard" />
-                        <Button variant="outlined" color="bg_color" onClick={handleExtra} style={{ textTransform: "none", }}>Add Extra</Button>
-                    </div>
+                   
                     <div className={styles.extraItems} style={{ marginBottom: "0.5rem", }}>
                         {extraOptions.map((option) => (
                             <span key={option.text} className={styles.extraItem}>
@@ -95,8 +86,8 @@ export default function AddPizza({ setClose }) {
                     <UploadButton file={file} setFile={setFile} />
                 </DialogContent>
                 <DialogActions>
-                    <Button variant="outlined" color="bg_color" onClick={handleClose} style={{ textTransform: "none", }}>Cancel</Button>
-                    <Button variant="contained" color="bg_color" type="submit" style={{ textTransform: "none" }}>Save Details</Button>
+                    <Button variant="outlined" color="bg_color" onClick={handleClose} style={{ textTransform: "none", }}>Cancelar</Button>
+                    <Button variant="contained" color="bg_color" type="submit" style={{ textTransform: "none" }}>Salvar</Button>
                 </DialogActions>
             </form>
         </Dialog>

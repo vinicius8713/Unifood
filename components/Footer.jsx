@@ -8,42 +8,37 @@ function Footer() {
             <div className={styles.content}>
                 <div className={styles.top}>
                     <div className={styles.logoDetails}>
-                        <span className={styles.logo_name}><span style={{ color: "#ac0101" }}>Dine</span>out</span>
+                        <span className={styles.logo_name}><span style={{ color: "#ac0101" }}>Uni</span>Food</span>
                     </div>
                 </div>
                 <div className={styles.linkBoxes}>
                     <ul className={styles.box}>
-                        <li className={styles.link_name}><a >Company</a></li>
+                        <li className={styles.link_name}><a >Companhia</a></li>
                         <li><Link href="/"><a >Home</a></Link></li>
-                        <li><Link href="/new"><a >My Cart</a></Link></li>
-                        <li><Link href="/about"><a >About</a></Link></li>
-                        <li><Link href="/"><a >Product</a></Link></li>
+                        <li><Link href="/new"><a >Meu carrinho</a></Link></li>
+                        <li><Link href="/about"><a >Sobre</a></Link></li>
+                        <li><Link href="/"><a >Produtos</a></Link></li>
                     </ul>
                     <ul className={styles.box}>
-                        <li className={styles.link_name}><a >Services</a></li>
-                        <li><Link href="/"><a >Product</a></Link></li>
-                        <li><Link href="/new"><a >My Cart</a></Link></li>
-                        <li><Link href="/new"><a >About</a></Link></li>
-                        <li><Link href="/new"><a >Contact</a></Link></li>
+                        <li className={styles.link_name}><a >Serviços</a></li>
+                        <li><Link href="/"><a >Produtos</a></Link></li>
+                        <li><Link href="/new"><a >Meu carrinho</a></Link></li>
+                        <li><Link href="/new"><a >Sobre</a></Link></li>
+                        <li><Link href="/new"><a >Contato</a></Link></li>
                     </ul>
                     <ul className={styles.box}>
-                        <li className={styles.link_name}><a >Account</a></li>
-                        <li><Link href="/login"><a >Sign-in</a></Link></li>
-                        <li><Link href="/register"><a >Join Free</a></Link></li>
+                        <li className={styles.link_name}><a >Conta</a></li>
+                        <li><Link href="/login"><a >Entrar</a></Link></li>
+                        <li><Link href="/register"><a >Inscreva-se gratuitamente</a></Link></li>
                     </ul>
                     <ul className={styles.box}>
                         <li className={styles.link_name}><a >Top Categories</a></li>
-                        <li><Link href="/c/61554bfe801949ad7b9be4ff"><a >Neapolitan Pizza.</a></Link></li>
-                        <li><Link href="/c/61554c2753bcf306407cb1bd"><a >Chicago Pizza.</a></Link></li>
-                        <li><Link href="/c/61554c43d2a6b15f764aff36"><a >New York-Style Pizza.</a></Link></li>
-                        <li><Link href="/c/61554c63dfd6a37d71449b5c"><a >Sicilian Pizza.</a></Link></li>
+                        <li><Link href="/c/61554bfe801949ad7b9be4ff"><a ></a></Link></li>
+                        <li><Link href="/c/61554c2753bcf306407cb1bd"><a ></a></Link></li>
+                        <li><Link href="/c/61554c43d2a6b15f764aff36"><a ></a></Link></li>
+                        <li><Link href="/c/61554c63dfd6a37d71449b5c"><a ></a></Link></li>
                     </ul>
-                    <ul className={`${styles.box} ${styles.inputBox}`}>
-                        <li className={styles.link_name}>About Dineout</li>
-                        <li style={{ color: "#F7FFFF" }}>
-                        Find best pizza restaurants in India offering discounts on food & drinks, check out menu, reviews and also book a table through dineout for free.
-                        </li>
-                    </ul>
+                   
                 </div>
             </div>
         </footer>
