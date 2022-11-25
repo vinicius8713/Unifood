@@ -18,11 +18,11 @@ const Cart = () => {
                 <table className={styles.table}>
                     <thead>
                         <tr className={styles.trTitle}>
-                            <th>Product</th>
-                            <th>Name</th>
+                            <th>Produtos</th>
+                            <th>Nome</th>
                             <th>Extras</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
                             <th>Total</th>
                         </tr>
                     </thead>
@@ -50,13 +50,13 @@ const Cart = () => {
                                     </span>
                                 </td>
                                 <td>
-                                    <span className={styles.price}>&#8377; {product.price}</span>
+                                    <span className={styles.price}>R$ {product.price}</span>
                                 </td>
                                 <td>
                                     <span className={styles.quantity}>{product.quantity}</span>
                                 </td>
                                 <td>
-                                    <span className={styles.total}>&#8377; {product.price * product.quantity} </span>
+                                    <span className={styles.total}>R$ {product.price * product.quantity} </span>
                                 </td>
                             </tr>
                         ))}
@@ -65,23 +65,23 @@ const Cart = () => {
             </div>
             <div className={styles.right}>
                 <div className={styles.wrapper}>
-                    <h2 className={styles.title}>CART TOTAL</h2>
+                    <h2 className={styles.title}>TOTAL</h2>
                     <div className={styles.totalText}>
-                        <b className={styles.totalTextTitle}>Subtotal:</b>&#8377; {cart.total}
+                        <b className={styles.totalTextTitle}>Subtotal:</b>R$ {cart.total}
                     </div>
                     <div className={styles.totalText}>
-                        <b className={styles.totalTextTitle}>Discount:</b>&#8377; 0.00
+                        <b className={styles.totalTextTitle}>Desconto:</b>R$ 0.00
                     </div>
                     <div className={styles.totalText}>
-                        <b className={styles.totalTextTitle}>Total:</b>&#8377; {cart.total}
+                        <b className={styles.totalTextTitle}>Total:</b>R$ {cart.total}
                     </div>
                     {open ?
                         <div className={styles.add}>
-                            <Button size="large" variant="contained" color="bg_color" onClick={() => (setCash(true))}>Cash On delivery </Button>
+                            <Button size="large" variant="contained" color="bg_color" onClick={() => (setCash(true))}>Pagamento na entrega </Button>
                         </div>
                         :
                         <div className={styles.add}>
-                            <Button size="large" variant="contained" color="bg_color" onClick={() => (setOpen(true))}>CheckOut Now </Button>
+                            <Button size="large" variant="contained" color="bg_color" onClick={() => (setOpen(true))}>Confira agora</Button>
                         </div>}
                 </div>
             </div>

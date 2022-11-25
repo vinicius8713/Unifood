@@ -77,11 +77,11 @@ function Admin({ orders, products }) {
                 <table className={styles.table}>
                     <tbody>
                         <tr className={styles.trTitle}>
-                            <th>Image</th>
+                            <th>Imagem</th>
                             <th>Id</th>
-                            <th>Title</th>
-                            <th>Price</th>
-                            <th>Action</th>
+                            <th>Título</th>
+                            <th>Preço</th>
+                            <th>Ação</th>
                         </tr>
                     </tbody>
                     {pizzaList.map((product) => (
@@ -102,8 +102,8 @@ function Admin({ orders, products }) {
                                 <td>
                                     {/* <button className={styles.button}>Edit</button>
                                      */}
-                                    <Button variant="contained" color="primary">Edit</Button>
-                                    <Button variant="contained" onClick={() => handleDelete(product._id)} color="bg_color" style={{ marginLeft: "1rem" }}>Delete</Button>
+                                    <Button variant="contained" color="primary">Editar</Button>
+                                    <Button variant="contained" onClick={() => handleDelete(product._id)} color="bg_color" style={{ marginLeft: "1rem" }}>Deletar</Button>
                                 </td>
                             </tr>
                         </tbody>
@@ -111,16 +111,16 @@ function Admin({ orders, products }) {
                 </table>
             </div>
             <div className={styles.item}>
-                <h1 className={styles.title}>Orders</h1>
+                <h1 className={styles.title}>Ordens</h1>
                 <table className={styles.table}>
                     <tbody>
                         <tr className={styles.trTitle}>
                             <th>Id</th>
-                            <th>Customer</th>
+                            <th>Cliente</th>
                             <th>Total</th>
-                            <th>Payment</th>
+                            <th>Pagamento</th>
                             <th>Status</th>
-                            <th>Action</th>
+                            <th>Ação</th>
                         </tr>
                     </tbody>
                     {orderList.map((order) => (
@@ -134,7 +134,7 @@ function Admin({ orders, products }) {
                                 </td>
                                 <td>{status[order.status]}</td>
                                 <td>
-                                    <Button variant="contained" color="bg_color" onClick={() => handleStatus(order._id)}>Next Stage</Button>
+                                    <Button variant="contained" color="bg_color" onClick={() => handleStatus(order._id)}>Próximo Passo</Button>
                                 </td>
                             </tr>
                         </tbody>

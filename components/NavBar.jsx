@@ -21,19 +21,18 @@ function NavBar() {
                     </IconButton>
                 </div>
                 <div className={styles.texts}>
-                    <div className={styles.text}>Order Now</div>
-                    <div className={styles.text}>012 345 678</div>
+                
                 </div>
             </div>
             <div className={styles.item}>
                 <ul className={styles.list}>
                     <li className={styles.listItems}><Link href="/"><a >Homepage</a></Link></li>
-                    <li className={styles.listItems}><Link href="/#products"><a >Products</a></Link></li>
+                    <li className={styles.listItems}><Link href="/#products"><a >Produtos</a></Link></li>
                     <li className={styles.listItems}><Link href="/admin/login"><a >Login</a></Link></li>
-                    <h1 className={styles.listItemsLogo}>Dineout</h1>
+                    <h1 className={styles.listItemsLogo}>UniFood</h1>
                     <li className={styles.listItems}><Link href="/admin"><a >Admin</a></Link></li>
                     <li className={styles.listItems}><Link href="/about"><a >Blog</a></Link></li>
-                    <li className={styles.listItems}><Link href="/contact"><a >Contact</a></Link></li>
+                    <li className={styles.listItems}><Link href="/contact"><a >Contato</a></Link></li>
 
                 </ul>
             </div>
